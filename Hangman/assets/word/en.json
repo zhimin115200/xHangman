@@ -1,0 +1,602 @@
+[
+	{
+		"word": "pattern",
+		"difficult": "1",
+		"category": ""
+	},
+	{
+		"word": "mood",
+		"difficult": "3",
+		"category": ""
+	},
+	{
+		"word": "mower",
+		"difficult": "3",
+		"category": ""
+	},	
+	{
+		"word": "project",
+		"difficult": "1",
+		"category": ""
+	},
+	{
+		"word": "sprawl",
+		"difficult": "2",
+		"category": ""
+	},
+	{
+		"word": "strength",
+		"difficult": "1",
+		"category": ""
+	},
+	{
+		"word": "stiff",
+		"difficult": "2",
+		"category": ""
+	},
+	{
+		"word": "stitch",
+		"difficult": "2",
+		"category": ""
+	},
+	{
+		"word": "stoat",
+		"difficult": "2",
+		"category": ""
+	},
+	{
+		"word": "wrinkle",
+		"difficult": "1",
+		"category": ""
+	},
+	{
+		"word": "need",
+		"difficult": "3",
+		"category": ""
+	},
+	{
+		"word": "swag",
+		"difficult": "3",
+		"category": ""
+	},
+	{
+		"word": "prompt",
+		"difficult": "2",
+		"category": ""
+	},
+	{
+		"word": "bufferstop",
+		"difficult": "1",
+		"category": ""
+	},
+	{
+		"word": "locomotive",
+		"difficult": "1",
+		"category": ""
+	},
+	{
+		"word": "halyard",
+		"difficult": "1",
+		"category": ""
+	},
+	{
+		"word": "savory",
+		"difficult": "2",
+		"category": ""
+	},
+	{
+		"word": "bayleaves",
+		"difficult": "1",
+		"category": ""
+	},
+	{
+		"word": "tease",
+		"difficult": "3",
+		"category": ""
+	},
+	{
+		"word": "skilled",
+		"difficult": "1",
+		"category": ""
+	},
+	{
+		"word": "sick",
+		"difficult": "3",
+		"category": ""
+	},
+	{
+		"word": "rude",
+		"difficult": "3",
+		"category": ""
+	},
+	{
+		"word": "feeder",
+		"difficult": "2",
+		"category": ""
+	},
+	{
+		"word": "ditty",
+		"difficult": "2",
+		"category": ""
+	},
+	{
+		"word": "cloud",
+		"difficult": "2",
+		"category": ""
+	},
+	{
+		"word": "care",
+		"difficult": "3",
+		"category": ""
+	},
+	{
+		"word": "bear",
+		"difficult": "3",
+		"category": ""
+	},
+	{
+		"word": "beastly",
+		"difficult": "1",
+		"category": ""
+	},
+	{
+		"word": "awash",
+		"difficult": "2",
+		"category": ""
+	},
+	{
+		"word": "afresh",
+		"difficult": "2",
+		"category": ""
+	},
+{
+		"word": "acquaint",
+		"difficult": "1",
+		"category": ""
+	},
+	{
+		"word": "acronym",
+		"difficult": "1",
+		"category": ""
+	},
+	{
+		"word": "batter",
+		"difficult": "2",
+		"category": ""
+	},
+	{
+		"word": "baton",
+		"difficult": "2",
+		"category": ""
+	},
+	{
+		"word": "concerned",
+		"difficult": "1",
+		"category": ""
+	},
+	{
+		"word": "ebb",
+		"difficult": "3",
+		"category": ""
+	},
+	{
+		"word": "duck",
+		"difficult": "2",
+		"category": ""
+	},
+	{
+		"word": "champagne",
+		"difficult": "1",
+		"category": ""
+	},
+	{
+		"word": "holder",
+		"difficult": "2",
+		"category": ""
+	},
+	{
+		"word": "radiology",
+		"difficult": "1",
+		"category": ""
+	},
+	{
+		"word": "possession ",
+		"difficult": "1",
+		"category": ""
+	},
+	{
+		"word": "galaxy",
+		"difficult": "2",
+		"category": ""
+	},
+	{
+		"word": "missing",
+		"difficult": "2",
+		"category": ""
+	},
+	{
+		"word": "world",
+		"difficult": "2",
+		"category": ""
+	},
+	{
+		"word": "paraphrase",
+		"difficult": "1",
+		"category": ""
+	},
+	{
+		"word": "together",
+		"difficult": "1",
+		"category": ""
+	},
+	{
+		"word": "mushroom",
+		"difficult": "1",
+		"category": ""
+	},
+	{
+		"word": "showroom",
+		"difficult": "1",
+		"category": ""
+	},
+	{
+		"word": "beauty",
+		"difficult": "2",
+		"category": ""
+	},
+	{
+		"word": "entryphone",
+		"difficult": "1",
+		"category": ""
+	},
+	{
+		"word": "tambourine",
+		"difficult": "1",
+		"category": ""
+	},
+	{
+		"word": "rollerblade",
+		"difficult": "1",
+		"category": ""
+	},
+	{
+		"word": "little",
+		"difficult": "1",
+		"category": ""
+	},
+	{
+		"word": "waste",
+		"difficult": "2",
+		"category": ""
+	},
+	{
+		"word": "travel",
+		"difficult": "2",
+		"category": ""
+	},
+	{
+		"word": "husky",
+		"difficult": "2",
+		"category": ""
+	},
+	{
+		"word": "fast",
+		"difficult": "3",
+		"category": ""
+	},
+	{
+		"word": "drunken",
+		"difficult": "1",
+		"category": ""
+	},
+	{
+		"word": "crowd",
+		"difficult": "2",
+		"category": ""
+	},
+	{
+		"word": "costed",
+		"difficult": "2",
+		"category": ""
+	},
+	{
+		"word": "bamboo",
+		"difficult": "2",
+		"category": ""
+	},
+	{
+		"word": "creep",
+		"difficult": "2",
+		"category": ""
+	},
+	{
+		"word": "court",
+		"difficult": "2",
+		"category": ""
+	},
+	{
+		"word": "screen",
+		"difficult": "2",
+		"category": ""
+	},
+	{
+		"word": "locally",
+		"difficult": "1",
+		"category": ""
+	},
+	{
+		"word": "milionaire",
+		"difficult": "1",
+		"category": ""
+	},
+	{
+		"word": "opportunist",
+		"difficult": "1",
+		"category": ""
+	},
+	{
+		"word": "cross",
+		"difficult": "2",
+		"category": ""
+	},
+	{
+		"word": "cream",
+		"difficult": "2",
+		"category": ""
+	},
+	{
+		"word": "emerald",
+		"difficult": "1",
+		"category": ""
+	},
+	{
+		"word": "grey",
+		"difficult": "2",
+		"category": ""
+	},
+	{
+		"word": "purple",
+		"difficult": "2",
+		"category": ""
+	},
+	{
+		"word": "dark",
+		"difficult": "2",
+		"category": ""
+	},
+	{
+		"word": "orange",
+		"difficult": "2",
+		"category": ""
+	},
+	{
+		"word": "chocolate",
+		"difficult": "1",
+		"category": ""
+	},
+	{
+		"word": "bungalow",
+		"difficult": "1",
+		"category": ""
+	},
+	{
+		"word": "likely",
+		"difficult": "2",
+		"category": ""
+	},
+	{
+		"word": "jersey",
+		"difficult": "2",
+		"category": ""
+	},
+	{
+		"word": "extremity",
+		"difficult": "1",
+		"category": ""
+	},
+	{
+		"word": "cottage",
+		"difficult": "2",
+		"category": ""
+	},
+	{
+		"word": "coroner",
+		"difficult": "2",
+		"category": ""
+	},
+	{
+		"word": "commoner",
+		"difficult": "1",
+		"category": ""
+	},
+	{
+		"word": "competent",
+		"difficult": "1",
+		"category": ""
+	},
+	{
+		"word": "radiation",
+		"difficult": "1",
+		"category": ""
+	},
+	{
+		"word": "tether",
+		"difficult": "2",
+		"category": ""
+	},
+	{
+		"word": "parallel",
+		"difficult": "1",
+		"category": ""
+	},
+	{
+		"word": "uncivil",
+		"difficult": "1",
+		"category": ""
+	},
+	{
+		"word": "uncle",
+		"difficult": "2",
+		"category": ""
+	},
+	{
+		"word": "squabble",
+		"difficult": "1",
+		"category": ""
+	},
+	{
+		"word": "quake",
+		"difficult": "2",
+		"category": ""
+	},
+	{
+		"word": "vicinity",
+		"difficult": "1",
+		"category": ""
+	},
+	{
+		"word": "rugby",
+		"difficult": "2",
+		"category": ""
+	},
+	{
+		"word": "football",
+		"difficult": "1",
+		"category": ""
+	},
+	{
+		"word": "key",
+		"difficult": "3",
+		"category": ""
+	},
+	{
+		"word": "gain",
+		"difficult": "2",
+		"category": ""
+	},
+	{
+		"word": "gantry",
+		"difficult": "2",
+		"category": ""
+	},
+	{
+		"word": "flash",
+		"difficult": "2",
+		"category": ""
+	},
+	{
+		"word": "fiscal",
+		"difficult": "2",
+		"category": ""
+	},
+	{
+		"word": "fashion",
+		"difficult": "1",
+		"category": ""
+	},
+	{
+		"word": "family",
+		"difficult": "2",
+		"category": ""
+	},
+	{
+		"word": "flash",
+		"difficult": "2",
+		"category": ""
+	},
+	{
+		"word": "enrich",
+		"difficult": "2",
+		"category": ""
+	},
+	{
+		"word": "tendency",
+		"difficult": "1",
+		"category": ""
+	},
+	{
+		"word": "compound",
+		"difficult": "1",
+		"category": ""
+	},
+	{
+		"word": "splurge",
+		"difficult": "1",
+		"category": ""
+	},
+	{
+		"word": "hoot",
+		"difficult": "2",
+		"category": ""
+	},
+	{
+		"word": "zipper",
+		"difficult": "1",
+		"category": ""
+	},
+	{
+		"word": "cuff",
+		"difficult": "2",
+		"category": ""
+	},
+	{
+		"word": "papillon",
+		"difficult": "1",
+		"category": ""
+	},
+	{
+		"word": "pocket",
+		"difficult": "2",
+		"category": ""
+	},
+	{
+		"word": "cape",
+		"difficult": "3",
+		"category": ""
+	},
+	{
+		"word": "tailleur",
+		"difficult": "1",
+		"category": ""
+	},
+	{
+		"word": "dress",
+		"difficult": "2",
+		"category": ""
+	},
+	{
+		"word": "shorts",
+		"difficult": "2",
+		"category": ""
+	},
+	{
+		"word": "promotion",
+		"difficult": "1",
+		"category": ""
+	},
+	{
+		"word": "brand",
+		"difficult": "2",
+		"category": ""
+	},
+	{
+		"word": "bronze",
+		"difficult": "2",
+		"category": ""
+	},
+	{
+		"word": "models",
+		"difficult": "2",
+		"category": ""
+	},
+	{
+		"word": "lighting",
+		"difficult": "1",
+		"category": ""
+	},
+	{
+		"word": "season",
+		"difficult": "2",
+		"category": ""
+	}	
+]
