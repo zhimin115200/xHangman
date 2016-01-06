@@ -1,7 +1,4 @@
-/**
- * Copyright (C) 2014 android10.org. All rights reserved.
- * @author Fernando Cejas (the android10 coder)
- */
+
 package com.example.hangman.model.local;
 
 import java.io.BufferedReader;
@@ -18,7 +15,7 @@ import com.example.hangman.model.DataSource;
 
 
 /**
- * {@link DataSource} implementation based on file system data store.
+ * 本地数据源
  */
 public class LocalDataStore implements DataSource {
 

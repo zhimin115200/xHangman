@@ -1,7 +1,4 @@
-/**
- * Copyright (C) 2014 android10.org. All rights reserved.
- * @author Fernando Cejas (the android10 coder)
- */
+
 package com.example.hangman.present;
 
 import android.content.Context;
@@ -13,10 +10,6 @@ import com.example.hangman.model.DataSourceFactory;
 import com.example.hangman.model.DataSourceFactory.DataSourceType;
 import com.example.hangman.present.view.ILoadWordView;
 
-/**
- * {@link Presenter} that controls communication between views and models of the presentation
- * layer.
- */
 public class GetWordPresenter {
 
 	private Context mContext;

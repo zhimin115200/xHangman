@@ -6,10 +6,7 @@ package com.example.hangman.executor;
 
 
 /**
- * Executor implementation can be based on different frameworks or techniques of asynchronous
- * execution, but every implementation will execute the {@link Interactor} out of the UI thread.
- *
- * Use this class to execute an {@link Interactor}.
+ * 执行请求
  */
 public interface ThreadExecutor {
   /**

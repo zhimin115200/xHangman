@@ -9,12 +9,7 @@ public class Mapper {
 	}
 
 	/**
-	 * Transform from valid json string to {@link UserEntity}.
-	 *
-	 * @param userJsonResponse A json representing a user profile.
-	 * @return {@link UserEntity}.
-	 * @throws JSONException 
-	 * @throws com.google.gson.JsonSyntaxException if the json string is not a valid json structure.
+	 * 将网络请求得到的json转成string
 	 */
 	public String transformGetWordResponse(String response) throws JSONException {
 

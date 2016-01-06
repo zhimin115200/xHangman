@@ -1,7 +1,4 @@
-/**
- * Copyright (C) 2014 android10.org. All rights reserved.
- * @author Fernando Cejas (the android10 coder)
- */
+
 package com.example.hangman.model.net;
 
 import android.content.Context;
@@ -11,23 +8,12 @@ import java.util.Collection;
 
 import com.example.hangman.exception.NetworkConnectionException;
 import com.example.hangman.model.entity.Mapper;
-import com.example.hangman.model.entity.request.StartRequestEntity;
-import com.example.hangman.model.entity.response.StartResponseEntity;
 
-/**
- * {@link RestApi} implementation for retrieving data from the network.
- */
 public class RestApiImpl implements RestApi {
 
 	private final Context context;
 	private final Mapper entityJsonMapper;
 
-	/**
-	 * Constructor of the class
-	 *
-	 * @param context {@link android.content.Context}.
-	 * @param userEntityJsonMapper {@link UserEntityJsonMapper}.
-	 */
 	public RestApiImpl(Context context, Mapper entityJsonMapper) {
 		if (context == null || entityJsonMapper == null) {
 			throw new IllegalArgumentException("The constructor parameters cannot be null!!!");
@@ -36,11 +22,6 @@ public class RestApiImpl implements RestApi {
 		this.entityJsonMapper = entityJsonMapper;
 	}
 
-	/**
-	 * Checks if the device has any active internet connection.
-	 *
-	 * @return true device with internet connection, otherwise false.
-	 */
 	private boolean isThereInternetConnection() {
 		boolean isConnected;
 

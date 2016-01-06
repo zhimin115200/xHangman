@@ -1,7 +1,4 @@
-/**
- * Copyright (C) 2014 android10.org. All rights reserved.
- * @author Fernando Cejas (the android10 coder)
- */
+
 package com.example.hangman.model.net;
 
 import android.content.Context;
@@ -9,20 +6,11 @@ import android.content.Context;
 import com.example.hangman.model.DataSource;
 import com.example.hangman.present.ErrorBundle;
 
-/**
- * {@link DataSource} implementation based on connections to the api (Cloud).
- */
+
 public class CloudDataStore implements DataSource {
 
 	private final RestApi restApi;
 
-
-	/**
-	 * Construct a {@link DataSource} based on connections to the api (Cloud).
-	 *
-	 * @param restApi The {@link RestApi} implementation to use.
-	 * @param userCache A {@link UserCache} to cache data retrieved from the api.
-	 */
 	public CloudDataStore(RestApi restApi) {
 		this.restApi = restApi;
 	}

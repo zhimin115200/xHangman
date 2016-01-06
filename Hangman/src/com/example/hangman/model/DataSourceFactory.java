@@ -10,7 +10,7 @@ import com.example.hangman.model.net.RestApiImpl;
 import android.content.Context;
 
 /**
- * Factory that creates different implementations of {@link DataSource}.
+ * 创建不同 {@link DataSource}的工厂.
  */
 public class DataSourceFactory {
 
@@ -28,7 +28,7 @@ public class DataSourceFactory {
 	}
 
 	/**
-	 * Create {@link DataSource} from a user id.
+	 * Create {@link DataSource} from DataSourceType.
 	 */
 	public DataSource create(DataSourceType type) {
 		DataSource userDataStore;

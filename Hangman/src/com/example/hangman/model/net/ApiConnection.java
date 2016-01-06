@@ -1,7 +1,4 @@
-/**
- * Copyright (C) 2014 android10.org. All rights reserved.
- * @author Fernando Cejas (the android10 coder)
- */
+
 package com.example.hangman.model.net;
 
 import java.io.BufferedInputStream;
@@ -16,11 +13,6 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.concurrent.Callable;
 
-/**
- * Api Connection class used to retrieve data from the cloud.
- * Implements {@link java.util.concurrent.Callable} so when executed asynchronously can
- * return a value.
- */
 public class ApiConnection implements Callable<String> {
 
 	private static final String CONTENT_TYPE_LABEL = "Content-Type";
@@ -48,12 +40,6 @@ public class ApiConnection implements Callable<String> {
 		return new ApiConnection(url, REQUEST_METHOD_POST , params);
 	}
 
-	/**
-	 * Do a request to an api asynchronously.
-	 * It should not be executed in the main thread of the application.
-	 *
-	 * @return A string response
-	 */
 	public String requestSyncCall() {
 		connectToApi();
 		return response;

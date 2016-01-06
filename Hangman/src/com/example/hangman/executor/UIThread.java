@@ -5,8 +5,7 @@ import android.os.Handler;
 import android.os.Looper;
 
 /**
- * MainThread (UI Thread) implementation based on a Handler instantiated with the main
- * application Looper.
+ * 主线程 ，持有一个主线程的handler
  */
 public class UIThread implements PostExecutionThread {
 

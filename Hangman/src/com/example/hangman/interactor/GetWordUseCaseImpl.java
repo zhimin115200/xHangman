@@ -1,7 +1,4 @@
-/**
- * Copyright (C) 2014 android10.org. All rights reserved.
- * @author Fernando Cejas (the android10 coder)
- */
+
 package com.example.hangman.interactor;
 
 import android.content.Context;
@@ -9,13 +6,9 @@ import android.content.Context;
 import com.example.hangman.executor.PostExecutionThread;
 import com.example.hangman.executor.ThreadExecutor;
 import com.example.hangman.model.DataSource;
-import com.example.hangman.model.entity.response.StartResponseEntity;
 import com.example.hangman.present.ErrorBundle;
 
-/**
- * This class is an implementation of {@link IStartGameUseCase} that represents a use case for
- * retrieving a collection of all {@link User}.
- */
+
 public class GetWordUseCaseImpl implements IGetWordUseCase {
 
 	private Context mContext;
@@ -24,15 +17,6 @@ public class GetWordUseCaseImpl implements IGetWordUseCase {
 	private final PostExecutionThread postExecutionThread;
 	private DataSource.GetWordCallback callback;
 
-	/**
-	 * Constructor of the class.
-	 *
-	 * @param userRepository A {@link UserRepository} as a source for retrieving data.
-	 * @param threadExecutor {@link ThreadExecutor} used to execute this use case in a background
-	 * thread.
-	 * @param postExecutionThread {@link PostExecutionThread} used to post updates when the use case
-	 * has been executed.
-	 */
 	public GetWordUseCaseImpl(Context context , DataSource dataSource, ThreadExecutor threadExecutor,
 			PostExecutionThread postExecutionThread) {
 		if (context==null||dataSource == null || threadExecutor == null || postExecutionThread == null) {
