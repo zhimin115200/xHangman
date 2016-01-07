@@ -51,9 +51,13 @@ public class MainActivity extends Activity implements ILoadWordView , ILoadLette
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		
+		init();
+	}
+	
+	void init(){
+		
 		initializeView();
 		initializePresenter();
-		
 		this.getWordPresenter.getWord();
 	}
 	
@@ -127,33 +131,36 @@ public class MainActivity extends Activity implements ILoadWordView , ILoadLette
 		showWord(wordTmp);
 	}
 	@Override
-	public void letterFailed(char c, String result) {
+	public void letterFailed(char c) {
 		// TODO Auto-generated method stub
-		showWord(result);
 		hindKey(c);
 	}
 	@Override
-	public void letterSuccessed(char c, String result) {
+	public void letterSuccessed(char c, ArrayList<Integer> indexs) {
 		// TODO Auto-generated method stub
-		showWord(result);
+		StringBuffer currentTextView = new StringBuffer(getCurrentTextView());
+		for(int i = 0; i < indexs.size() ; i++){
+			currentTextView.replace(indexs.get(i), indexs.get(i)+1, String.valueOf(c));
+		}
+		showWord(currentTextView.toString());
 		hindKey(c);
 	}
 	@Override
 	public void wordSuccess() {
 		// TODO Auto-generated method stub
-		this.getWordPresenter.getWord();
-		initializeView();
-		initializePresenter();
-		
+		init();
 	} 
 	
+	private String getCurrentTextView(){
+		return hiddenwordTv.getText().toString();
+	}
 	private void showWord(String word){
 		hiddenwordTv.setText(word);
 	}
 
 	private void hindKey(char c){
 		Button btn = lettersBtn.get(c-97);
-		btn.setVisibility(View.GONE);
+		btn.setVisibility(View.INVISIBLE);
 	}
 	
 	@Override
@@ -163,6 +170,6 @@ public class MainActivity extends Activity implements ILoadWordView , ILoadLette
 		int tag = Integer.valueOf(btn.getTag().toString());
 		char c = (char)(tag +97);
 		
-		this.guessLetterPresenter.tryGuess(this.word, c);
+		this.guessLetterPresenter.tryGuess(this.word , getCurrentTextView(), c);
 	}
 }
