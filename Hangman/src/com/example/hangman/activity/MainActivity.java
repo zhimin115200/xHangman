@@ -26,8 +26,10 @@ import com.example.hangman.model.DataSourceFactory.DataSourceType;
 import com.example.hangman.present.ErrorBundle;
 import com.example.hangman.present.GetWordPresenter;
 import com.example.hangman.present.GuessLetterPresenter;
+import com.example.hangman.present.SubmitPresenter;
 import com.example.hangman.present.view.ILoadLetterView;
 import com.example.hangman.present.view.ILoadWordView;
+import com.example.hangman.present.view.ISubmitView;
 
 import android.os.Bundle;
 import android.app.Activity;
@@ -40,20 +42,30 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class MainActivity extends Activity implements ILoadWordView , ILoadLetterView , OnClickListener{
+public class MainActivity extends Activity implements ILoadWordView , ILoadLetterView , ISubmitView , OnClickListener{
 
 	GetWordPresenter getWordPresenter;
 	GuessLetterPresenter guessLetterPresenter;
+	SubmitPresenter submitPresenter;
 	String word="";
 	TextView hiddenwordTv;
-	ArrayList<Button>  lettersBtn = new ArrayList<Button>();
+	TextView totalScoreTv;
+	TextView correctCountTv;
+	ArrayList<Button>  lettersBtn ;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		
 		init();
+		submitPresenter = new SubmitPresenter(this);
 	}
 	
+	@Override
+	protected void onStart() {
+		// TODO Auto-generated method stub
+		super.onStart();
+		submitPresenter.caculate();
+	}
+
 	void init(){
 		
 		initializeView();
@@ -62,7 +74,10 @@ public class MainActivity extends Activity implements ILoadWordView , ILoadLette
 	}
 	
 	void initializeView(){
+		
 		setContentView(R.layout.main);
+		
+		lettersBtn = new ArrayList<Button>();
 		lettersBtn.add((Button)this.findViewById(R.id.a_btn));
 		lettersBtn.add((Button)this.findViewById(R.id.b_btn));
 		lettersBtn.add((Button)this.findViewById(R.id.c_btn));
@@ -95,8 +110,8 @@ public class MainActivity extends Activity implements ILoadWordView , ILoadLette
 			lettersBtn.get(i).setTag(i);
 		}
 		hiddenwordTv = (TextView)this.findViewById(R.id.hiddenword);
-		
-		
+		correctCountTv = (TextView)this.findViewById(R.id.count);
+		totalScoreTv = (TextView)this.findViewById(R.id.total_scores);
 	}
 	
 	void initializePresenter() {
@@ -105,7 +120,7 @@ public class MainActivity extends Activity implements ILoadWordView , ILoadLette
 		PostExecutionThread postExecutionThread = UIThread.getInstance();
 
 		DataSource dataSource =
-				new DataSourceFactory(this.getApplicationContext()).create(DataSourceFactory.DataSourceType.LOCAL);
+				new DataSourceFactory(this.getApplicationContext()).create(DataSourceFactory.DataSourceType.CLOUD);
 
 		IGetWordUseCase getWordUseCase = new GetWordUseCaseImpl(this.getApplicationContext(),dataSource,
 				threadExecutor, postExecutionThread);
@@ -129,26 +144,32 @@ public class MainActivity extends Activity implements ILoadWordView , ILoadLette
 		this.word=word;
 		String wordTmp=word.replaceAll("[a-zA-Z]",CommonConstans.defaultHint);
 		showWord(wordTmp);
+		
+		Log.d("123", word);
 	}
 	@Override
 	public void letterFailed(char c) {
 		// TODO Auto-generated method stub
 		hindKey(c);
+		submitPresenter.tryCountPlus();
 	}
 	@Override
 	public void letterSuccessed(char c, ArrayList<Integer> indexs) {
 		// TODO Auto-generated method stub
+		
 		StringBuffer currentTextView = new StringBuffer(getCurrentTextView());
 		for(int i = 0; i < indexs.size() ; i++){
 			currentTextView.replace(indexs.get(i), indexs.get(i)+1, String.valueOf(c));
 		}
 		showWord(currentTextView.toString());
 		hindKey(c);
+		submitPresenter.tryCountPlus();
 	}
 	@Override
 	public void wordSuccess() {
 		// TODO Auto-generated method stub
 		init();
+		submitPresenter.caculate();
 	} 
 	
 	private String getCurrentTextView(){
@@ -168,8 +189,20 @@ public class MainActivity extends Activity implements ILoadWordView , ILoadLette
 		// TODO Auto-generated method stub
 		Button btn = (Button)arg0;
 		int tag = Integer.valueOf(btn.getTag().toString());
-		char c = (char)(tag +97);
+		char c = (char)(tag + 97);
 		
 		this.guessLetterPresenter.tryGuess(this.word , getCurrentTextView(), c);
+	}
+
+	@Override
+	public void renderScore(int score) {
+		// TODO Auto-generated method stub
+		totalScoreTv.setText("Total score: "+String.valueOf(score));
+	}
+
+	@Override
+	public void renderCount(int count) {
+		// TODO Auto-generated method stub
+		correctCountTv.setText("Correct count: "+String.valueOf(count));
 	}
 }
