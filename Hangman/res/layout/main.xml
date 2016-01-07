@@ -21,19 +21,19 @@
             android:layout_weight="7.0"
             android:gravity="right"
             android:paddingRight="5.0dip"
-            android:text="Total score:"
+            android:text="Total score: "
             android:textColor="#ffffffff"
             android:textSize="6.0pt"
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/score"
+            android:id="@+id/count"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:layout_weight="7.0"
             android:gravity="right"
             android:paddingRight="5.0dip"
-            android:text="In category:"
+            android:text="Correct count: "
             android:textColor="#ffffffff"
             android:textSize="6.0pt"
             android:textStyle="bold" />
@@ -259,12 +259,11 @@
                     android:layout_weight="1.0"
                     android:background="@drawable/z" />
 
-                <Button
-                    android:id="@+id/sound_onoff"
+                <TextView
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
                     android:layout_weight="1.0"
-                    android:background="@drawable/sound_on" />
+                    />
             </TableRow>
         </TableLayout>
     </LinearLayout>
